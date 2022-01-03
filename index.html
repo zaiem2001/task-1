@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <form accept="/" class="form">
+        <label for="hours">Hour/s</label>
+        <select name="hours" id="hours" class="select__hours">
+          <option value="1" selected class="hour">1</option>
+          <option value="2" class="hour">2</option>
+          <option value="3" class="hour">3</option>
+          <option value="4" class="hour">4</option>
+          <option value="5" class="hour">5</option>
+        </select>
+
+        <label for="amount">Amount</label>
+        <input
+          type="text"
+          id="amount"
+          placeholder="Enter The Amount for each hour."
+        />
+
+        <label for="total-hours">Total Hours</label>
+        <input
+          type="text"
+          placeholder="Enter total hours format - (HH:MM:SS)"
+          id="total-hours"
+        />
+
+        <button type="submit" class="calc">Calculate</button>
+      </form>
+
+      <p class="output hide">
+        The Total Amount is : <span class="total__amount">2004 </span> Rupees
+      </p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
